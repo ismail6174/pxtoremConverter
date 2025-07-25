@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Pixel Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+</head>
+<body>
+
+  <h2><i class="fas fa-ruler icon"></i>PX / REM / % Converter</h2>
+
+  <div class="converter">
+    <div class="input-group">
+      <label for="base">Base Font Size (px):</label>
+      <input type="number" id="base" value="16" />
+    </div>
+
+    <div class="input-group">
+      <label for="px">Pixels (px):</label>
+      <input type="number" id="px" placeholder="e.g. 16" />
+    </div>
+    <div class="result" id="remResult">REM: -</div>
+    <div class="result" id="percentResult">Percent: -</div>
+
+    <hr style="margin: 20px 0; border-color: #333;" />
+
+    <div class="input-group">
+      <label for="rem">REM:</label>
+      <input type="number" id="rem" step="0.01" placeholder="e.g. 1" />
+    </div>
+    <div class="result" id="pxFromRem">PX: -</div>
+
+    <div class="input-group">
+      <label for="percent">Percent (%):</label>
+      <input type="number" id="percent" step="0.1" placeholder="e.g. 100" />
+    </div>
+    <div class="result" id="pxFromPercent">PX: -</div>
+  </div>
+  
+  <footer style="position: absolute; bottom: -40px; width: 100%; text-align: center; font-size: 14px; color: white;">
+    © 2025 Ismail Shah | Built with ❤️ by 
+    <a href="https://github.com/ismail6174" target="_blank" style="color: #fff; text-decoration: underline;">ismail6174</a>
+  </footer>
+
+  <script src="app.js">
+    
+  </script>
+
+</body>
+</html>
